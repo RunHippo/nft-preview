@@ -6,6 +6,9 @@ const { resolve, PROJECT_PATH } = require('./constants');
 
 module.exports = merge(common, {
   mode: 'development',
+  entry: {
+    index: resolve(PROJECT_PATH, './src/demo/app.tsx'),
+  },
   devtool: 'eval-source-map',
   plugins: [
     new BundleAnalyzerPlugin({
@@ -21,7 +24,7 @@ module.exports = merge(common, {
   ],
   devServer: {
     host: '127.0.0.1',
-    port: 9003,
+    port: 9001,
     compress: true,
     open: true,
     hot: true,

@@ -17,3 +17,5 @@ package-lock.json
 
 # webpack 配置
 /scripts
+
+typings.d.ts

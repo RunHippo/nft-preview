@@ -16,5 +16,8 @@ module.exports = {
     project: ['tsconfig.json'],
   },
   plugins: ['react'],
-  rules: {},
+  rules: {
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
+  },
 };
