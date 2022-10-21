@@ -5,7 +5,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 module.exports = {
   // 定义了入口文件路径
   entry: {
-    index: resolve(PROJECT_PATH, './src/index.ts'),
+    index: resolve(PROJECT_PATH, './src/index.tsx'),
   },
   // 定义了编译打包之后的文件名以及所在路径。还有打包的模块类型
   output: {
