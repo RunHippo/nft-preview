@@ -24,7 +24,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: name: Publish to NPM
+      - name: Publish to NPM
         run: |
           npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
           npm publish
