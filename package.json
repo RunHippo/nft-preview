@@ -2,7 +2,9 @@
   "name": "media-player",
   "version": "1.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/library-starter.js",
+  "module": "dist/library-starter.js",
+  "typings": "types/index.d.ts",
   "scripts": {
     "dev": "rimraf dist types && cross-env NODE_ENV=development webpack-dev-server --config ./scripts/webpack.dev.js",
     "lint": "eslint src",
